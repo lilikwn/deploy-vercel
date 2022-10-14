@@ -17,4 +17,6 @@ app.use((req, res) => {
   })
 });
 
-app.listen(PORT, 'localhost')
+app.listen(PORT, ()=>{
+  console.log(`connected to port ${PORT}`)
+})
